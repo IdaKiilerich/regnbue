@@ -24,7 +24,7 @@ function anim_night_step () {
         strip_long_range.setPixelColor(night_pos_2, neopixel.colors(NeoPixelColors.Black))
         if (night_pos_1 > 19) {
             for (let indeks = 0; indeks <= 9; indeks++) {
-                strip_short_range.setPixelColor(indeks, neopixel.rgb(randint(50, 255), randint(50, 255), randint(50, 255)))
+                strip_short_range.setPixelColor(indeks, neopixel.rgb(randint(0, 200), randint(0, 200), randint(0, 200)))
             }
             night_pos_1 = 0
         } else {
@@ -91,7 +91,7 @@ function anim_random (loops2: number) {
     strip.clear()
     for (let index = 0; index < loops2; index++) {
         for (let index = 0; index < 30; index++) {
-            strip.setPixelColor(randint(0, 29), neopixel.rgb(randint(25, 255), randint(25, 255), randint(25, 255)))
+            strip.setPixelColor(randint(0, 29), neopixel.rgb(randint(0, 200), randint(0, 200), randint(0, 200)))
         }
         strip.show()
         basic.pause(100)
